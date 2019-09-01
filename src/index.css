@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#App {
+  top: 6em;
+  position: relative;
+}
+
+#quote-box {
+  /*Class for colourful box. */
+  margin: 2em;
+  margin: 0 auto;
+  padding: 2em;
+  max-width: 30em;
+  color: black;
+  text-align: left;
+  border: 1px solid black;
+  background: #1e90ff;
+}
+
+#text {
+  /*Class for white box. */
+  background-color: white;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(158, 158, 158, 1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(158, 158, 158, 1);
+  box-shadow: 10px 10px 5px 0px rgba(158, 158, 158, 1);
+  padding: 1.5em 1em;
+}
+
+#quote {
+  /*Class for quote text.*/
+  font-size: 2em;
+  font-family: Serif;
+}
+
+#author {
+  /*Class for author text.*/
+  font-size: 1.4em;
+  font-family: Serif;
+  margin: 0.5em 0 1em 0;
+  padding: 0 0.5em 0 0.5em;
+  text-align: right;
+  font-weight: bold;
+}
+
+#new-quote,
+#tweet-quote {
+  /*Classes for New Quote and Tweet Quote buttons.*/
+  -moz-box-shadow: 0px 1px 0px 0px #f0f7fa;
+  -webkit-box-shadow: 0px 1px 0px 0px #f0f7fa;
+  box-shadow: 0px 1px 0px 0px #f0f7fa;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #5b6178;
+}
+
+#new-quote:active,
+#tweet-quote:active {
+  position: relative;
+  top: 1px;
+}
+
+#new-quote {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #ef3232),
+    color-stop(1, #d10101)
+  );
+  background: -moz-linear-gradient(top, #ef3232 5%, #d10101 100%);
+  background: -webkit-linear-gradient(top, #ef3232 5%, #d10101 100%);
+  background: -o-linear-gradient(top, #ef3232 5%, #d10101 100%);
+  background: -ms-linear-gradient(top, #ef3232 5%, #d10101 100%);
+  background: linear-gradient(to bottom, #ef3232 5%, #d10101 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ef3232', endColorstr='#d10101', GradientType=0);
+  background-color: #ef3232;
+  border: 1px solid #d00505;
+  margin-left: 5em;
+}
+
+#new-quote:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #d10101),
+    color-stop(1, #ef3232)
+  );
+  background: -moz-linear-gradient(top, #d10101 5%, #ef3232 100%);
+  background: -webkit-linear-gradient(top, #d10101 5%, #ef3232 100%);
+  background: -o-linear-gradient(top, #d10101 5%, #ef3232 100%);
+  background: -ms-linear-gradient(top, #d10101 5%, #ef3232 100%);
+  background: linear-gradient(to bottom, #d10101 5%, #ef3232 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d10101', endColorstr='#ef3232', GradientType=0);
+  background-color: #d10101;
+}
+
+#tweet-quote {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #33bdef),
+    color-stop(1, #019ad2)
+  );
+  background: -moz-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+  background: -webkit-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+  background: -o-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+  background: -ms-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+  background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33bdef', endColorstr='#019ad2', GradientType=0);
+  background-color: #33bdef;
+  border: 1px solid #057fd0;
+  margin-right: 5em;
+  float: right;
+}
+
+#tweet-quote:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #019ad2),
+    color-stop(1, #33bdef)
+  );
+  background: -moz-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+  background: -webkit-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+  background: -o-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+  background: -ms-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+  background: linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#019ad2', endColorstr='#33bdef', GradientType=0);
+  background-color: #019ad2;
+}
